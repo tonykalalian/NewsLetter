@@ -1,0 +1,17 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "My first signup form",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tony Kalalian",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.0-alpha3",
+    "express": "^4.18.2",
+    "request": "^2.88.2"
+  }
+}
