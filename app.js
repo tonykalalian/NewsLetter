@@ -26,11 +26,11 @@ app.post("/", (req, res) => {
     ],
   };
   const jsonData = JSON.stringify(data);
-  const url = "https://us8.api.mailchimp.com/3.0/lists/fcbfd21383";
+  const url = "https://us21.api.mailchimp.com/3.0/lists/480d62ab58";
 
   const options = {
     method: "POST",
-    auth: "tony:8003acf560fea18d934ca2f5aedc27d3-us8",
+    auth: "tony:c4c51ded0994891c3cc2b49869816ba2-us21",
   };
   const request = https.request(url, options, (response) => {
     if (response.statusCode === 200) {
@@ -49,9 +49,6 @@ app.post("/", (req, res) => {
 app.post("/failure", (req, res) => {
   res.redirect("/");
 });
-app.listen(process.env.PORT || 3000, () => {
-  console.log("server is running on port 3000");
+app.listen(process.env.PORT || 3100, () => {
+  console.log("server is running on port 3100");
 });
-
-//API KEY: 34f5b284ba126c00e9c1bfa1b0c031b5-us8
-// List id :  fcbfd21383
