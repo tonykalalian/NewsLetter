@@ -27,10 +27,14 @@ app.post("/", (req, res) => {
   };
   const jsonData = JSON.stringify(data);
   const url = "https://us21.api.mailchimp.com/3.0/lists/480d62ab58";
+//   api key:480d62ab58
+//   to have a better experience go to mailchimp generate an api for yourself and replace mine
 
   const options = {
     method: "POST",
-    auth: "tony:9b823d0d91cf4e41fb0d0475279551a4-us21",
+    auth: "tony:9b823d0d91cf4e41fb0d0475279551a4-us21", 
+//     listid:9b823d0d91cf4e41fb0d0475279551a4-us21
+//  for a better experience go to mailchimp an copy your listid
   };
   const request = https.request(url, options, (response) => {
     if (response.statusCode === 200) {
