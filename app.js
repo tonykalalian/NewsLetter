@@ -32,7 +32,7 @@ app.post("/", (req, res) => {
 
   const options = {
     method: "POST",
-    auth: "tony:9b823d0d91cf4e41fb0d0475279551a4-us21", 
+    auth: "tony:d69de0d554f36225b724f1792146f47c-us21", 
 //     listid:9b823d0d91cf4e41fb0d0475279551a4-us21
 //  for a better experience go to mailchimp an copy your listid
   };
